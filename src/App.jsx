@@ -1,17 +1,16 @@
-const App = () => {
+import Hero from "./components/Hero";
+import HomeCards from "./components/HomeCards";
+import Navbar from "./components/Navbar";
 
-  const name = ["Annappa", "samith","Rahl"];
-  const loggedIn = true
+const App = () => {
   return (
     <div>
-      App
-      <p>list of names</p>
-      <ul>
-        {name.map((name, index) => (
-          <li key={index}>{name}</li>
-        ))}
-      </ul>
-      {loggedIn && <h1>Hello Member</h1>}
+      <Navbar />
+      <Hero
+        subtitle="Search your favorite jobs and host your jobs aswell"
+        discripton="Land on your job"
+      />
+      <HomeCards />
     </div>
   );
 };
