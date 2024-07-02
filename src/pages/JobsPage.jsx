@@ -1,8 +1,8 @@
-
+import JobListings from "../components/JobListings"
 
 const Jobspage = () => {
   return (
-    <div>Jobspage</div>
+    <JobListings/>
   )
 }
 
