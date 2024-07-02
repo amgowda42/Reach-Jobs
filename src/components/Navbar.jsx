@@ -1,40 +1,35 @@
 import logo from "../utils/images/jobs_logo.svg";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? "text-white bg-black hover:bg-amber-500 hover:text-white rounded-md px-3 py-2"
+      : "text-white hover:bg-amber-500 hover:text-white rounded-md px-3 py-2 bg-slate-500";
+
   return (
     <nav className="bg-white border-b-4 border-indigo-500">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-28 items-center justify-between">
           <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-            <a
-              className="flex flex-shrink-0 items-center mr-4"
-              href="/index.html"
-            >
+            <Link className="flex flex-shrink-0 items-center mr-4" to="/">
               <img className="h-24 w-auto" src={logo} alt="Reach Jobs" />
               <span className="hidden md:block text-red-600 text-2xl font-bold ml-5">
                 Reach Jobs
               </span>
-            </a>
+            </Link>
             <div className="md:ml-auto flex ">
               <div className="flex space-x-2 justify-center items-center">
-                <a
-                  href="/index.html"
-                  className="text-white bg-black hover:bg-amber-500 hover:text-white rounded-md px-3 py-2"
-                >
+                <NavLink to="/" className={linkClass}>
                   Home
-                </a>
-                <a
-                  href="/jobs.html"
-                  className="text-gray-950 hover:bg-amber-500 hover:text-white rounded-md px-3 py-2 font-semibold"
-                >
+                </NavLink>
+                <NavLink to="/jobs" className={linkClass}>
                   Jobs
-                </a>
-                <a
-                  href="/add-job.html"
-                  className="text-gray-950 hover:bg-amber-500 hover:text-white rounded-md px-3 py-2 font-semibold"
-                >
+                </NavLink>
+                <NavLink to="/add-job" className={linkClass}>
                   Add Jobs
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
