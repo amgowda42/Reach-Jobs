@@ -6,7 +6,7 @@ const Navbar = () => {
   const linkClass = ({ isActive }) =>
     isActive
       ? "text-white bg-black hover:bg-amber-500 hover:text-white rounded-md px-3 py-2"
-      : "text-white hover:bg-amber-500 hover:text-white rounded-md px-3 py-2 bg-slate-500";
+      : "text-white hover:bg-amber-500 hover:text-white rounded-md px-3 py-2 bg-slate-400";
 
   return (
     <nav className="bg-white border-b-4 border-indigo-500">
