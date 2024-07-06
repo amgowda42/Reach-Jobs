@@ -12,7 +12,7 @@ const JobListing = ({ job }) => {
   }
 
   return (
-    <div className="bg-white rounded-x7l shadow-md relative">
+    <div className="bg-white rounded-2xl shadow-lg relative ">
       <div className="p-4">
         <div className="mb-6">
           <div className="text-gray-600 my-2">{job.type}</div>

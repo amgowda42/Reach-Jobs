@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-const Card = ({ children, bg = "bg-gray-200" }) => {
-  return <div className={`${bg} p-6 rounded-lg shadow-md`}>{children}</div>;
+const Card = ({ children, bg = "bg-teal-100" }) => {
+  return <div className={`${bg} p-6 rounded-2xl  shadow-2xl `}>{children}</div>;
 };
 
 Card.propTypes = {

@@ -1,5 +1,5 @@
- {
- "jobs":[
+{
+  "jobs": [
     {
       "id": "1",
       "title": "Senior React Developer",
@@ -16,10 +16,10 @@
     },
     {
       "id": "2",
-      "title": "Front-End Engineer (React & Redux)",
+      "title": "Front-End Engineer (Redux & React)",
       "type": "Full-Time",
-      "location": "Bangalore, IND",
       "description": "Join our team as a Front-End Developer in sunny Bangalore, IND. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. We are also looking well distributed developer.",
+      "location": "Bangalore, IND",
       "salary": "20LPA-25LPA",
       "company": {
         "name": "Veneer Solutions",
