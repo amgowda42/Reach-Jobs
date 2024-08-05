@@ -21,6 +21,7 @@ const JobListings = ({ isHome = false }) => {
         console.log("error fetching data", error);
       } finally {
         setLoading(false);
+        console.log("Here We call the API to fetch");
       }
     };
     fetchJobs();
