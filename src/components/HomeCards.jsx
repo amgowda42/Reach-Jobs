@@ -17,7 +17,6 @@ const HomeCards = () => {
               Browse Jobs
             </Link>
           </Card>
-
           <Card bg="bg-indigo-300">
             <h2 className="text-2xl font-bold text-blue-600">For Employers</h2>
             <p className="mt-2 mb-4">
