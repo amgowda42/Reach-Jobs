@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 import JobListing from "./JobListing";
 import PropTypes from "prop-types";
 import Spinner from "./Spinner";
+import { useGetJobsQuery } from "../lib/features/hadlingJobs/handleJobsApis";
 
 const JobListings = ({ isHome = false }) => {
+  const { data: getAllJobsList } = useGetJobsQuery();
+  console.log("all Jobs calling from RTK ", getAllJobsList);
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
-  const apiUrl = isHome
-    ? "/api/jobs?_limit=3"
-    : "/api/jobs";
+  const apiUrl = isHome ? "/api/jobs?_limit=3" : "/api/jobs";
 
   useEffect(() => {
     const fetchJobs = async () => {
