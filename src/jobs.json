@@ -126,5 +126,19 @@
         "contactPhone": "555-555-5555"
       }
     }
+    ,{
+      "id": "10",
+      "title": "Senior Cloud Development Engineer",
+      "type": "Full-Time",
+      "description": "Join our team as a Senior Front End Developer in beautiful Bangalore, IND. We are looking for a skilled and enthusiastic individual to help us create innovative web solutions. Competitive salary and great benefits package available.",
+      "location": "Bangalore, IND",
+      "salary": "30LPA-35LPA",
+      "company": {
+        "name": "Mintra",
+        "description": "Zerodha is a leading technology company specializing in software development and Software as a Solutions. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
+        "contactEmail": "contact@zerodha@123.com",
+        "contactPhone": "555-555-5555"
+      }
+    }
   ]
 }

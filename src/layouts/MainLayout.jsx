@@ -4,12 +4,12 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "../components/Footer";
 import { Provider } from "react-redux";
-import store
+// import store
 
 const MainLayout = () => {
   return (
     <>
-      <Provider store={}>
+      <Provider store={store}>
         <Navbar />
         <Outlet />
         <Footer />
